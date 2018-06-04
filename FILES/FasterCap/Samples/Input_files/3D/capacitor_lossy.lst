@@ -1,0 +1,20 @@
+* Lossy capacitor
+* 
+* This capacitor is made by a lossy dielectric material with relative permittivity
+* equal to 2.96-j0.138, sandwiched between two square metal contacts
+* with finite thickness
+*
+
+* lower contact
+C capacitor_contact_sides.txt  1.0  0.0 0.0 0.0 + 0xd8d8d8ff
+C plate.txt  1.0  0.0 0.0 0.0 + 0xd8d8d8ff
+C plate.txt  2.96-j0.138  0.0 0.0 0.2  0xd8d8d8ff
+
+* dielectric medium
+D capacitor_diel_sides.txt  1.0  2.96-j0.138  0.0 0.0 0.2  0.5 0.5 0.5 - 0xa793b4ff
+
+* upper contact
+C capacitor_contact_sides.txt  1.0  0.0 0.0 0.8 + 0xd8d8d8ff
+C plate.txt  2.96-j0.138 0.0 0.0 0.8  + 0xd8d8d8ff
+C plate.txt  1.0  0.0 0.0 1.0  0xd8d8d8ff
+

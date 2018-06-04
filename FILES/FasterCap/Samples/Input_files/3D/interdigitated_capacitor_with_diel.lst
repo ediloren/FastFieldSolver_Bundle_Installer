@@ -1,0 +1,24 @@
+* Interdigitated capacitor with dielectric
+*
+*
+* Run in FasterCap lowering the -d parameter to 0.3, due to the high coupling of
+* the two combs
+*
+
+C combltop.txt  1.0  0.0 0.0 0.0 +
+C comblbot.txt  3.0  0.0 0.0 0.0
+
+C combrtop.txt  1.0  0.0 0.0 0.0 +
+C combrbot.txt  3.0  0.0 0.0 0.0
+
+C gndplane.txt  3.0  0.0 0.0 0.0 +
+C gndplanebot.txt  1.0  0.0 0.0 0.0
+
+* reference point here is dummy, since each panel in the definition
+* file 'dielshell.txt' contains its own reference point
+D dielshell.txt  1.0 3.0  0.0 0.0 0.0  0.0 0.0 0.0
+
+
+
+
+

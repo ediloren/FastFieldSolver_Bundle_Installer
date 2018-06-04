@@ -1,0 +1,18 @@
+* Array of five spheres
+*
+*
+* Spheres have unit radius, surface to surface distance is one meter;
+* Total capacitance of the center sphere should be 143pF, its self-capacitance 
+* should be 52pF, and the capacitances between the center sphere 
+* and spheres next in line should be C12 = 37.5pF and C13 = 7.88pF. 
+* see "Dissertation About Single-Electron Devices and Circuits", C. Wasshuber
+* Universität Wien, Jan 1997, appendix A
+*
+
+C sphere2.txt   1.0  -6.0 0.0 0.0
+C sphere2.txt   1.0  -3.0 0.0 0.0
+C sphere2.txt   1.0  0.0 0.0 0.0
+C sphere2.txt   1.0  3.0 0.0 0.0
+C sphere2.txt   1.0  6.0 0.0 0.0
+
+

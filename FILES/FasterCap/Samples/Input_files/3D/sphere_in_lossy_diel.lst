@@ -1,0 +1,10 @@
+*
+* 1m radius conductive sphere 
+* embedded in an infinite lossy dielectric medium
+*
+* By Gauss law, the capacitance is 4*pi*e0*er
+* where er is the relative permittivity, that can be complex valued
+* Analytic expected capacitance and conductance are: 333.8e-12 -5.6e-12j
+*
+C sphere2.txt 3.0-j0.05  0.0 0.0 0.0
+*

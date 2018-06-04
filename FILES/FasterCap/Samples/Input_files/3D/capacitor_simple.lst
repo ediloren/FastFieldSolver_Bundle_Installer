@@ -1,0 +1,22 @@
+* Simple parallel plate capacitor
+* 
+*
+* This capacitor is made by two square metal contacts
+* embedded in an homogeneous dielectric medium
+*
+* If fringing fields are neglected, the capacitance as per analytical formula
+* is e0*er*S/d where S is the surface of the armors and d is their distance.
+* In this case S = 1, d = 0.01, er = 1, therefore C = 8.854e-12 * 1 * 1 / 0.001 = 8.854e-9
+*
+* Remark: given the high geometrical ratio 1:1000 between the plate side and
+* the plate distance, for proper solution convergence you need to set FasterCap's
+* '-d' parameter to 0.1 or lower values.
+*
+* 
+
+* lower contact
+C plate.txt  1.0  0.0 0.0 0.0
+
+* upper contact
+C plate.txt  1.0  0.0 0.0 0.001
+

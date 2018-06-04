@@ -1,0 +1,6 @@
+* 2D - Coaxial cable, a=1 internal radius, b=2 external radius
+* Analytic capacitance capacitance is 2*pi*e0/ln(b/a) = 80.26 pf/m
+
+C circle_1.0.txt 1.0  0.0 0.0
+C circle_2.0.txt 1.0  0.0 0.0
+

@@ -1,0 +1,9 @@
+0 dielectric interface between microstrips
+*
+S diel  -0.4 0.0  -0.115 0.0
+S diel  -0.085 0.0  -0.065 0.0
+S diel   -0.035 0.0  -0.015 0.0
+S diel   0.015 0.0  0.035 0.0
+S diel   0.065 0.0  0.085 0.0
+S diel   0.115 0.0  0.4 0.0
+

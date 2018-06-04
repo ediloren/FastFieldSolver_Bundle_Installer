@@ -1,0 +1,16 @@
+* 2D - circular wire over gnd plane
+*
+* Benchmark test against analytical solution = 107.8pF
+*
+* Input parameters are:
+*
+* diameter = 1.0, distance of the center of the wire from the gnd plane = 2.0
+*
+* Ref. R. F. Harrington, C. Wei, "Losses on Multiconductor Transmission Lines
+* in Multilayered Dielectric Media", IEEE Transactions on MTT, Vol. 33, No. 7, Jul 1984
+*
+* The problem is scaled 1:100
+*
+C circle_0.005.txt 4.0  0.0 0.02
+C gnd_plane.txt 4.0  0.0 0.0
+

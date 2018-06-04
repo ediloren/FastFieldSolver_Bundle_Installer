@@ -1,0 +1,28 @@
+* 2D - coupled microstrips
+*
+* capacitance should be about C11 = 93.7 pF/m, C12 = 8.5 pF/m, C13 = -0.81 pF/m
+*                                        C14 = -0.35 pF/m, C15 = -0.22 pF/m, C22 = 95.3 pF/m
+*                                        C23 = -8.3 pF/M, C24 = -0.76 pF/m, C33 = 95.3 pF/m
+*
+* See J. Bernal, F. Medina, M. Horno, "Quick quasi-TEM analysis of multiconductor
+* transmission lines with rectangular cross section", IEEE Transactions on MTT, Vol. 45, No. 9, Sep 1997
+
+C microstrip_top_0.03.txt 1.0  -0.1 0.01 +
+C microstrip_bottom_0.03.txt 2.0  -0.1 0.01
+
+C microstrip_top_0.03.txt 1.0  -0.05 0.01 +
+C microstrip_bottom_0.03.txt 2.0  -0.05 0.01
+
+C microstrip_top_0.03.txt 1.0  0.0 0.01 +
+C microstrip_bottom_0.03.txt 2.0  0.0 0.01
+
+C microstrip_top_0.03.txt 1.0  0.05 0.01 +
+C microstrip_bottom_0.03.txt 2.0  0.05 0.01
+
+C microstrip_top_0.03.txt 1.0  0.1 0.01 +
+C microstrip_bottom_0.03.txt 2.0  0.1 0.01
+
+D diel_microstrips_5x_0.03.txt 2.0 1.0  0.0 0.01  0.0 0.0
+
+C gnd_plane.txt 2.0  0.0 0.0
+

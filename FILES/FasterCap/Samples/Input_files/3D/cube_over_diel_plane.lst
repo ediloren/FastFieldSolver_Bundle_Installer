@@ -1,0 +1,16 @@
+* Cube over dielectric plane
+* 
+*
+* Capacitance of the unit cube over dielectric plane should be 0.7750 * 4 * pi * e0 = 86.23 pF
+* for the conditions er2 = 5 * er1 and h/a = 1.1
+* see "Electrostatic field of cube electrodes", D. Velickovic, A. Milovanovic,
+* SERBIAN JOURNAL OF ELECTRICAL ENGINEERING, Vol. 1, No. 2, June 2004, pp. 187 - 198
+*
+
+C cube.txt  1.0  -0.5 -0.5 1.1  0x008800ff
+D gndplane_10x10.txt  1.0  5.0  -5.0 -5.0 0.0  0.0 0.0 1.0  0xffff00ff
+* use larger gnd planes in case you want to simulate higher h/a ratios
+*D gndplane_15x15.txt  1.0  5.0  -7.5 -7.5 0.0  0.0 0.0 1.0
+*D gndplane_20x20.txt  1.0  5.0  -10.0 -10.0 0.0  0.0 0.0 1.0
+
+

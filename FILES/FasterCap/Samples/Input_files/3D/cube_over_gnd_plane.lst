@@ -1,0 +1,15 @@
+* Cube over GND plane
+* 
+*
+* Capacitance of the unit cube over gnd plane should be 0.8424 * 4 * pi * e0 = 93.73 pF
+* (this is the C11 element of the Maxwell capacitance matrix, that is equal to C11' + C12',
+* that is the sum of the capacitance of the cube towards infinity plus the capacitance
+* of the cube towards the ground plane, i.e. the capacitance of the cube when the
+* ground plane has the same zero potential as infinity)
+* see "Electrostatic field of cube electrodes", D. Velickovic, A. Milovanovic,
+* SERBIAN JOURNAL OF ELECTRICAL ENGINEERING, Vol. 1, No. 2, June 2004, pp. 187 - 198
+*
+
+C cube.txt  1.0  -0.5 -0.5 1.1
+C gndplane_10x10.txt  1.0  -5.0 -5.0 0.0
+

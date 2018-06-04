@@ -1,0 +1,17 @@
+* Bus made of 5x lines 2500m long
+* 
+* This example breaks the two-levels preconditioner as well as FastCap2.
+* There are five very long and thin lines; local interactions are important,
+* and trying to uniformly divide a cubic region in which the conductors
+* are contained in a hierarchy of cubes leads to a very large numer of *empty*
+* cubes
+*
+* To solve in FasterCap, use the Jacobi preconditioner only
+*
+
+C line_2500m.txt  1.0  0.0   0.0 0.0
+C line_2500m.txt  1.0  3.75  0.0 0.0
+C line_2500m.txt  1.0  7.5   0.0 0.0
+C line_2500m.txt  1.0  11.25 0.0 0.0
+C line_2500m.txt  1.0  15.0  0.0 0.0
+

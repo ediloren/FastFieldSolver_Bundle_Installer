@@ -1,0 +1,6 @@
+0 microstrip top
+*
+S microstrip -0.005 0.0  -0.005 0.002
+S microstrip -0.005 0.002  0.005 0.002
+S microstrip  0.005 0.002  0.005 0.0
+

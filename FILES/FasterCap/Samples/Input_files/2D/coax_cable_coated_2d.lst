@@ -1,0 +1,12 @@
+* 2D - Coated coaxial cable, a=1 internal radius, b=1.5 diel interface, c=2 external radius
+* Analytic capacitance capacitance is C1*C2/(C1+C2) where
+* C1 = 2*pi*e0*er1/ln(b/a) = 274.4 pF/m, C2 = 2*pi*e0*er2/ln(c/b) = 193.4 pf/m
+* It follows C = 113.4 pF/m
+* Note that in this input file the discretization is coarse (20 sections per circle)
+* so actual capacitance is close but not exactly the one of a perfectly circular
+* conductor
+
+C circle_0.1.txt 2.0  0.0 0.0
+D circle_0.15.txt 2.0 1.0  0.0 0.0  0.0 0.0
+C circle_0.2.txt 1.0  0.0 0.0
+

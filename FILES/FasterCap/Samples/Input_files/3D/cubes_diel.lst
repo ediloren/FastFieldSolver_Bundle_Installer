@@ -1,0 +1,56 @@
+0 Two plates with a dielectric cube between them
+*
+* This example shows the correct and the wrong positioning of a dielectric reference point
+*
+*
+C plate.txt 1.0  0.0 0.0 0.0
+
+* in this case the outperm reference point (0.5, 0.5, 0.6), referencing the relative
+* permittivity 2.0, is inside the dielectric cube. Since a cube is a convex solid, all
+* the panels composing the cube 'see' the 2.0 permittivity on the internal side.
+D cube.txt 2.0 1.0  0.0 0.0 0.1  0.5 0.5 0.6
+* in this case instead we tried to specify as outperm reference point the air
+* around the cube (relative permittivity 1.0). In principle this is valid; however,
+* since external / internal side of the panels is evaluated w.r.t. the position
+* of the reference point on panel by panel basis, for some panels this choice is wrong.
+* The reason is that in FasterCap (or FastCap2) there is no concept of
+* topology of a surface, so the SW has no way to tell which is the internal/external side
+* of an object on a surface basis. Please consider that this is anyway difficult in general,
+* in case of open surfaces like the ones allowed as dielectric interfaces in FasterCap,
+* even if you keep topology information with the shape.
+* If you uncomment the following line and comment out the previous 'D' definition,
+* you will see that the result changes, while you might have expected it not to,
+* if you had naively applied the intuitive concept of internal and external sides.
+* Specifically, only the bottom panel of the cube is correctly referenced, while the top and
+* side panels 'think' that the reference point is on the opposite side w.r.t. what we wanted. 
+*D cube.txt 1.0 2.0  0.0 0.0 0.1  0.5 0.5 0.0
+
+C plate.txt 1.0  0.0 0.0 1.2
+
+
+File cube.txt
+
+0 1mX1mX1m unit cube 
+*
+* front left
+Q mycube  1.0 1.0 0.0  1.0 0.0 0.0  1.0 0.0 1.0  1.0 1.0 1.0
+* front right
+Q mycube  0.0 1.0 0.0  1.0 1.0 0.0  1.0 1.0 1.0  0.0 1.0 1.0
+* back left
+Q mycube  1.0 0.0 0.0  0.0 0.0 0.0  0.0 0.0 1.0  1.0 0.0 1.0
+* back right
+Q mycube  0.0 0.0 0.0  0.0 1.0 0.0  0.0 1.0 1.0  0.0 0.0 1.0
+* top
+Q mycube  0.0 0.0 1.0  1.0 0.0 1.0  1.0 1.0 1.0  0.0 1.0 1.0
+* bottom
+Q mycube  0.0 0.0 0.0  1.0 0.0 0.0  1.0 1.0 0.0  0.0 1.0 0.0
+
+End
+
+File plate.txt
+
+0 1x1 unit square conducting plate
+*
+Q myplate  0.0 0.0 0.0  1.0 0.0 0.0  1.0 1.0 0.0  0.0 1.0 0.0
+
+End

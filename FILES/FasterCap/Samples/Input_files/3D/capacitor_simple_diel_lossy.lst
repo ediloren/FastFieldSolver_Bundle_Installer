@@ -1,0 +1,30 @@
+* Simple parallel plate capacitor with lossy inhomogeneous dielectric
+* 
+*
+* This capacitor is made by two square metal contacts
+* filled with a lossy inhomogeneous dielectric medium
+*
+* If fringing fields are neglected, the capacitance as per analytical formula
+* is the series of two capacitors: the first capacitor has capacitance
+* C1 = e0*er1*S/ (d/2), the second C2 = e0*er2*S/ (d/2), where S is
+* the surface of the armors and d is their distance.
+* In this case S = 1, d = 0.01, er1 = 1, er2 = 2-j0.03; therefore
+* C1 = 8.854e-12 * 1 * 1 / 0.0005 = 1.77e-8
+* C2 = 8.854e-12 * 2 * 1 / 0.0005 = 3.54e-8 - j5.31e-10
+* therefore C = C1 // C2 = 1.18e-8 - 5.90e-11
+*
+* Remark: given the high geometrical ratio 1:1000 between the plate side and
+* the plate distance, for proper solution convergence you need to set FasterCap's
+* '-d' parameter to 0.1 or lower values.
+*
+* 
+
+* lower contact
+C plate.txt  1.0  0.0 0.0 0.0
+
+* dielectric interface
+D plate.txt 2.0-j0.03 1.0  0.0 0.0 0.0005  0.0 0.0 0.001
+
+* upper contact
+C plate.txt  2.0-j0.03 0.0 0.0 0.001
+

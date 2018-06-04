@@ -1,0 +1,27 @@
+* 2D - three line bus in layered dielectric
+*
+* capacitance should be about:
+* C11 = 142.2 pF/m, C12 = 21.8 pF/m, C13 = 0.9 pF/m,
+* C22 = 93.5 pF/m, C23 = 18.1 pF/m, C33 = 88 pF/m
+* See W. Delbare, D. De Zutter, "Space-Domain Greens Funcion Approach
+* to the Capacitance Calculation of Multiconductor Lines in Multilayered Dielectrics
+* with Improved Surface Charge Modeling", IEEE Transactions on MTT, Vol. 37, No. 10, Oct 1989
+
+
+C microstrip_top_0.035.txt 3.2 -0.05 0.02 +
+C microstrip_bottom_0.035.txt 4.3  -0.05 0.02
+
+C microstrip_top_0.035.txt 1.0  0.0 0.03 +
+C microstrip_bottom_0.035.txt 3.2  0.0 0.03
+
+C microstrip_top_0.035.txt 1.0  0.05 0.03 +
+C microstrip_bottom_0.035.txt 3.2  0.05 0.03
+
+D diel1_microstrips_0.035.txt  3.2 4.3  0.0 0.02  0.0  0.05
+
+D diel2_microstrips_0.035.txt  1.0 3.2  0.0 0.03  0.0  0.05
+
+* gnd plane below the signal lines
+C gnd_plane.txt 4.3  0.0 0.0
+
+

@@ -1,0 +1,14 @@
+cubegen_c - Di Lorenzo Enrico   3/Apr/1998
+
+Works like standard MIT cubegen utility as described in fastcap 
+user's guide par. 2.8 but -n option has been replaced with 
+-nx, -ny, -nz. They allow the number of panels per cube edge's
+specification along the three cube axis. -nx refers to 
+fr/bl - top/bottom edges, -ny to fl/br - bl/fr edges,
+-nz to fl/br - top/bottom edges. 
+(A new disRect C function has been written for this purpose; 
+see source file for details.)  
+The main use of this utility is the generation of structures
+which are stretched along one direction (e.g. wires).  
+
+

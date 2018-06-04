@@ -1,0 +1,17 @@
+*
+* list file for a 1m radius conductive sphere 
+* embedded in a lossy dielectric medium, thickness 1m
+* - inner is a conductor surface
+* - outer is a dielectric/dielectric (coating/air) interface
+*
+* By Gauss law, the capacitance is 4*pi*e0*er*a*b/(b-a(1-er))
+* where er is the relative permittivity, that can be complex valued;
+* a is the conductor radius; and b is the dielectric shell radius.
+* Expected capacitance and conductance are: 148.4e-12 -7.42e-13j
+*
+* radius 1 shell is the conductor
+C sphere2.txt 2.0-j0.03  0.0 0.0 0.0
+*
+* radius 2 shell is the dielectric interface - air on the outside
+D sphere_big2.txt 1.0 2.0-j0.03  0.0 0.0 0.0  0.0 0.0 0.0 -
+

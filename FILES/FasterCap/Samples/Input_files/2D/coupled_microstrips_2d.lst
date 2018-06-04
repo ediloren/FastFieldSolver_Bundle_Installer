@@ -1,0 +1,17 @@
+* 2D - coupled microstrips
+*
+* capacitance should be about C11 = 91.65 pF/m, C12 = 8.22 pF/m
+*
+* See C. Wei, R. F. Harrington, J. R. Mautz, T. K. Sarkar, "Multiconductor transmission lines
+* in multilayered dielectric media", IEEE Transactions on MTT, Vol. 32, No. 4, Apr 1985
+
+C microstrip_top_0.03.txt 1.0  -0.025 0.01 +
+C microstrip_bottom_0.03.txt 2.0  -0.025 0.01
+
+C microstrip_top_0.03.txt 1.0  0.025 0.01 +
+C microstrip_bottom_0.03.txt 2.0  0.025 0.01
+
+D diel_microstrips_0.03.txt 2.0 1.0  0.0 0.01  0.0 0.0
+
+C gnd_plane.txt 2.0  0.0 0.0
+

@@ -1,0 +1,7 @@
+0 conductor definition file for mesh 'gndplane'
+
+T gndplane  121.5 90.0 -10.0  -25.0 90.0 -10.0  121.5 -25.0 -10.0
+T gndplane  -25.0 90.0 -10.0  -25.0 -25.0 -10.0  121.5 -25.0 -10.0
+
+
+

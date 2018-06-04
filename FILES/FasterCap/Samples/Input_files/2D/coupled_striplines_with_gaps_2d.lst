@@ -1,0 +1,28 @@
+* 2D - three line bus in layered dielectric
+*
+* capacitance should be about:
+* C11 = 222.8 pF/m, C12 = -14.9 pF/m
+*
+* REMARK: result is different from the paper for high discretization levels 
+* (we get about C11 = 228.2 pF/M, C12 = -5.3 pF/m)
+*
+* To improve convergence, set '-d' to 0.1 (gaps are thin)
+*
+* See C. C. Huang, "Two-dimensional capacitance calculation in stratified
+* and/or arbitrary dielectric media", IEEE Transactions on MTT, Vol. 42, No. 3, Mar 1994
+
+C microstrip_top_0.03.txt 1.0  -0.025 0.01 +
+C microstrip_bottom_0.03.txt 1.0  -0.025 0.01
+
+C microstrip_top_0.03.txt 1.0  0.025 0.01 +
+C microstrip_bottom_0.03.txt 1.0  0.025 0.01
+
+D microstrip_0.032.txt 1.0 5.0  -0.025 0.009  -0.025  0.015
+
+D microstrip_0.032.txt 1.0 5.0  0.025 0.009  0.025  0.015
+
+
+* gnd plane above and below the signal lines
+C gnd_plane.txt 5.0  0.0 0.0 +
+C gnd_plane.txt 5.0  0.0 0.05
+

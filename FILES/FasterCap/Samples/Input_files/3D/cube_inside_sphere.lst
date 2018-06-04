@@ -1,0 +1,13 @@
+* Cube inside sphere
+* 
+*
+* Capacitance of a cube with side=0.4 inside a unit radius sphere should be 0.361047 * 4 * pi * e0 = 40.17 pF
+* (this is the C11 element of the Maxwell capacitance matrix, that is equal to C11' + C12',
+* where C11' should be zero since the cube is completely contained into the shpere)
+* see "Electrostatic field of cube electrodes", D. Velickovic, A. Milovanovic,
+* SERBIAN JOURNAL OF ELECTRICAL ENGINEERING, Vol. 1, No. 2, June 2004, pp. 187 - 198
+*
+
+C cube_0.4.txt  1.0  -0.2 -0.2 -0.2
+C sphere2.txt   1.0  0.0 0.0 0.0
+

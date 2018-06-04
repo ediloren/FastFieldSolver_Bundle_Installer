@@ -1,0 +1,111 @@
+FastFieldSolvers Software Bundle History
+========================================
+
+Version 5.0.0, 2017/08/23
+- LGPL version
+- FasterCap 6.0 LGPL
+- FastModel 3.0 LGPL
+
+Version 4.6.2, 2016/12/23
+- FasterCap updated Demo license
+- FastModel 2.6 license update
+
+Version 4.6.1, 2015/12/22
+- FasterCap updated Demo license
+- FastModel 2.5.8 license update
+
+Version 4.6.0, 2015/08/04
+- FastCap2 3.6.0 in 32 bit and 64 bit versions
+- FastHenry2 3.6.0 in 32 bit and 64 bit versions
+
+Version 4.5.3, 2015/02/20
+- Included libgomp-1.dll (for x86) and libgomp_64-1.dll (for x64)
+  in the distribution, as needed by FasterCap 5.5.x
+
+Version 4.5.2, 2014/12/21
+- FasterCap 5.5.2 and new Demo license
+- FastModel 2.5.7 license update
+
+Version 4.5.1, 2014/09/08
+- FasterCap 5.5.1
+
+Version 4.5.0, 2014/06/30
+- FasterCap 5.5.0
+- FastModel 2.5.6 license update
+
+Version 4.0.7, 2014/03/31
+- FasterCap 5.0.7 for x64
+
+Version 4.0.6, 2014/03/18
+- FasterCap 5.0.6 for x64
+- FasterCap 5.0.7 for x86
+
+Version 4.0.5, 2013/10/09
+- FasterCap 5.0.5
+- FastModel 2.5.5 license update
+
+Version 4.0.4, 2013/10/09
+- FasterCap 5.0.5 patch beta
+
+Version 4.0.3, 2013/06/30
+- FastModel 2.5.4
+
+Version 4.0.2, 2013/06/14
+- Created as installer supporting also exe for Windows 64bits
+- Support of FasterCap 5.0.3 for x64
+
+Version 4.0.1, 2013/05/15
+- Added redistributable library mingwm10.dll
+
+Version 4.0.0, 2013/03/21
+- New license subversion 4.0.3
+- FasterCap 5.0.2
+- FasterCap 2D samples
+- FasterCap 2D and 3D single file samples
+- FastModel 2.5.3
+- Third party licenses 
+
+Version 3.1.3, 2013/01/24
+- New license subversion
+
+Version 3.1.3, 2013/01/24
+- New license subversion
+
+Version 3.1.2, 2012/12/31
+- New license
+- Upgraded to FastModel version 2.5.2
+
+Version 3.1.1, 2012/12/03
+- Updgraded to FasterCap 3.1.1
+
+Version 3.1.0, 2012/11/19
+- Updgraded to FasterCap 3.1.0
+
+Version 3.0.3, 2012/06/29
+- Updgraded to FasterCap 3.0.3
+
+Version 3.0.0, 2012/04/16
+- Updgraded to FasterCap 3.0 
+- Updgraded to FastModel 2.5 
+- Added FasterCap sample files:
+  o capacitor.lst
+  o sphere_in_lossy_diel.lst
+  o coated_sph_lossy.lst
+  o capacitor_lossy.lst
+
+
+Version 2.0.1, 2012/01/20
+- Added FasterCap sample file pplates.lst
+
+
+Version 2.0, 2011/12/31
+- FastModel version 2.4
+- FastCap2 version 3.51
+- FastHenry2 version 3.32
+- FasterCap version 2.0
+
+
+Version 1.0, 2011/11/30
+- FastModel version 2.4
+- FastCap2 version 3.51
+- FastHenry2 version 3.32

@@ -1,0 +1,4 @@
+0 microstrip bottom
+*
+S microstrip -0.0175 0.0  0.0175 0.0
+

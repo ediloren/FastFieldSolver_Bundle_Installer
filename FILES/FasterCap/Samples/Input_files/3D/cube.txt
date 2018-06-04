@@ -1,0 +1,19 @@
+* 1mX1mX1m unit cube 
+*
+* Capacitance of the unit cube should be 0.6606780 * 4 * pi * e0 = 73.51 pF
+* see "The Random Walk on the Boundary Method for Calculating Capacitance", M. Mascagni,
+* N. Simonov
+*
+* front left
+Q mycube  1.0 1.0 0.0  1.0 0.0 0.0  1.0 0.0 1.0  1.0 1.0 1.0
+* front right
+Q mycube  0.0 1.0 0.0  1.0 1.0 0.0  1.0 1.0 1.0  0.0 1.0 1.0
+* back left
+Q mycube  1.0 0.0 0.0  0.0 0.0 0.0  0.0 0.0 1.0  1.0 0.0 1.0
+* back right
+Q mycube  0.0 0.0 0.0  0.0 1.0 0.0  0.0 1.0 1.0  0.0 0.0 1.0
+* bottom
+Q mycube  0.0 0.0 0.0  1.0 0.0 0.0  1.0 1.0 0.0  0.0 1.0 0.0
+* top
+Q mycube  0.0 0.0 1.0  1.0 0.0 1.0  1.0 1.0 1.0  0.0 1.0 1.0
+

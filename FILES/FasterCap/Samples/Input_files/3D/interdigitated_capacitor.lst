@@ -1,0 +1,12 @@
+* Interdigitated capacitor
+*
+*
+* Run in FasterCap lowering the -d parameter to 0.3, due to the high coupling of
+* the two combs
+*
+C CombLeft.txt  1.0  0.0 0.0 0.0
+C CombRight.txt  1.0  0.0 0.0 0.0
+
+
+
+

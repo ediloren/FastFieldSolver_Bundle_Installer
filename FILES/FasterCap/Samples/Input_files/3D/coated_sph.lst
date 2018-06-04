@@ -1,0 +1,16 @@
+*
+* fastcap surface list file for two concentric spherical shells
+* - inner is a conductor surface
+* - outer is a dielectric/dielectric (coating/air) interface
+*
+* By Gauss law, the capacitance is 4*pi*e0*er*a*b/(b-a(1-er))
+* where er is the relative permittivity;
+* a is the conductor radius; and b is the dielectric shell radius.
+* Expected capacitance is: 148.4e-12 F
+*
+* radius 1 shell is the conductor
+C sphere2.txt 2.0  0.0 0.0 0.0
+*
+* radius 2 shell is the dielectric interface - air on the outside
+D sphere_big2.txt 1.0 2.0  0.0 0.0 0.0  0.0 0.0 0.0 -
+

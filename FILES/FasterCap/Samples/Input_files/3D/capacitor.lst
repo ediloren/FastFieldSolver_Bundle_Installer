@@ -1,0 +1,19 @@
+* Capacitor
+* 
+* This capacitor is made by a dielectric material with relative permittivity
+* equal to 3.0, sandwiched between two square metal contacts
+* with finite thickness
+
+* lower contact
+C capacitor_contact_sides.txt  1.0  0.0 0.0 0.0 + 0xd8d8d8ff
+C plate.txt  1.0  0.0 0.0 0.0 + 0xd8d8d8ff
+C plate.txt  3.0  0.0 0.0 0.2  0xd8d8d8ff
+
+* dielectric medium
+D capacitor_diel_sides.txt  1.0  3.0  0.0 0.0 0.2  0.5 0.5 0.5 - 0xa793b4ff
+
+* upper contact
+C capacitor_contact_sides.txt  1.0  0.0 0.0 0.8 + 0xd8d8d8ff
+C plate.txt  3.0  0.0 0.0 0.8 + 0xd8d8d8ff
+C plate.txt  1.0  0.0 0.0 1.0  0xd8d8d8ff
+

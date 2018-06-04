@@ -1,0 +1,15 @@
+* Sphere inside cube
+* 
+*
+* Capacitance of a unit radius sphere inside a cube with side=2.5 should be 7.915462 * 4 * pi * e0 / 2.5 = 352.3 pF
+* (this is the C11 element of the Maxwell capacitance matrix, that is equal to C11' + C12',
+* where C11' should be zero since the cube is completely contained into the sphere)
+* REMARK: this is not coincident with the result from the paper. Seems a typo in the results formula,
+* in which the normalized value must be scaled by b=2.5
+* see "Electrostatic field of cube electrodes", D. Velickovic, A. Milovanovic,
+* SERBIAN JOURNAL OF ELECTRICAL ENGINEERING, Vol. 1, No. 2, June 2004, pp. 187 - 198
+*
+
+C sphere2.txt   1.0  0.0 0.0 0.0
+C cube_2.5.txt  1.0  -1.25 -1.25 -1.25
+

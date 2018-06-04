@@ -1,0 +1,18 @@
+* 2D - coupled striplines
+*
+* capacitance should be about C11 = 217.4 pF/m, C12 = -108.1 pF/m
+*
+* See J. Bernal, F. Medina, M. Horno, "Quick quasi-TEM analysis of multiconductor
+* transmission lines with rectangular cross section", IEEE Transactions on MTT, Vol. 45, No. 9, Sep 1997
+
+C microstrip_top_0.01.txt 2.5  -0.006 0.02 +
+C microstrip_bottom_0.01.txt 10.0  -0.006 0.02
+
+C microstrip_top_0.01.txt 2.5  0.006 0.02 +
+C microstrip_bottom_0.01.txt 10.0  0.006 0.02
+
+D diel_microstrips_0.01.txt 10.0 2.5  0.0 0.02  0.0 0.0
+
+C gnd_plane.txt 10.0  0.0 0.0 +
+C gnd_plane.txt 2.5  0.0 0.05
+

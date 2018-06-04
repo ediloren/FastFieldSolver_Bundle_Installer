@@ -1,0 +1,15 @@
+0 Array of two cubes, in air
+*
+* Capacitance of the two cubes capacitor should be 0.51 * 4 * pi * e0 = 56.75 pF
+* for the conditions dx = 2.0 and unit cubes a = b = 1
+* (this is the C11' part of the C11 element of the Maxwell capacitance matrix, that is equal to C11' + C12'.
+* This is the capacitance of one cube, when both cubes are at the same potential)
+* see "Electrostatic field of cube electrodes", D. Velickovic, A. Milovanovic,
+* SERBIAN JOURNAL OF ELECTRICAL ENGINEERING, Vol. 1, No. 2, June 2004, pp. 187 - 198
+*
+* conductor | dielectric | offset
+* name      | constant   | in space
+*
+C cube.txt    1.000000     0.0 0.0 0.0
+C cube.txt    1.000000     2.0 0.0 0.0
+
