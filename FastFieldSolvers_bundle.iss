@@ -22,7 +22,7 @@ DefaultDirName={reg:HKLM\Software\FastFieldSolvers\Settings,Path|{pf32}\FastFiel
 DefaultGroupName=FastFieldSolvers
 UninstallDisplayIcon={app}\FastModel\FastModel.exe
 AllowNoIcons=yes
-LicenseFile=files\LICENCE.txt
+LicenseFile=files\license.txt
 ; no need to specify, this is the default
 ;PrivilegesRequired=admin
 AlwaysRestart=yes
@@ -42,7 +42,7 @@ WelcomeLabel2=This will install [name/ver] on your computer.%n%nPlease uninstall
 ; ****************************************
 
 Source: "files\History.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main
-Source: "files\LICENCE.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main
+Source: "files\license.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main
 ; third party licenses
 Source: "files\license_third_party\gpl.txt"; DestDir: "{app}\license_third_party"; Flags: ignoreversion; Components: main
 Source: "files\license_third_party\lgpl.txt"; DestDir: "{app}\license_third_party"; Flags: ignoreversion; Components: main
