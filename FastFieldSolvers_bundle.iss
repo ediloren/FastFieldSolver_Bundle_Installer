@@ -1,23 +1,27 @@
 ; -- FastFieldSolvers_bundle.iss --
-; Installer for FastFieldSolvers Software Bundle, Enrico Di Lorenzo, 2015/08/04
+; Installer for FastFieldSolvers Software Bundle, Enrico Di Lorenzo, 2019/04/08
 ; Added support for x86 and x64 version and redistributables for VS2013 Community Edition
+; Added support for x64 redistributables for VS2015 Community Edition
+; x86 (32 bit) versions no longer supported
 ;
 ; The script installs FastModel, FastCap2, FasterCap, FastHenry2
 
 ; The installer works in 64 bit mode or 32 bit mode according to the following define.
-; In 64 bit mode, we still need to define certain Registry settings as 32 bits, to allow
+; In 64 bit mode, we still need to define certain Registry settings as 32bits, to allow
 ; legacy FastCap2 and FastHenry2 to work
 
+; must always define, no more support for 32 bit installation (even if some codes
+; are still 32bits, e.g. FastModel)
 #define x64_install
 
 [Setup]      
 AppName=FastFieldSolvers Bundle
-AppVerName=FastFieldSolvers Software Bundle version 5.0.0
+AppVerName=FastFieldSolvers Software Bundle version 5.1.0
 AppPublisher=FastFieldSolvers
 AppPublisherURL=http://www.fastfieldsolvers.com
-AppCopyright= Copyright (C) 2017 FastFieldSolvers  S.R.L.
-; by default, since so far only FasterCap is 64bits, default installation is in the {pf32} directory
-; even for 64bits installation
+AppCopyright= Copyright (C) 2019 FastFieldSolvers  S.R.L.
+; by default, since only some of the exe are 64bits, default installation is in the {pf32} directory
+; no matter 32bits or 64bits installation
 DefaultDirName={reg:HKLM\Software\FastFieldSolvers\Settings,Path|{pf32}\FastFieldSolvers}
 DefaultGroupName=FastFieldSolvers
 UninstallDisplayIcon={app}\FastModel\FastModel.exe
@@ -148,6 +152,7 @@ Source: "files\FastHenry2\Utilities\MakeLcircuit.exe"; DestDir: "{app}\FastHenry
 Source: "files\FastHenry2\Utilities\MakeLnegative.exe"; DestDir: "{app}\FastHenry2\Utilities"; Flags: ignoreversion; Components: utilities
 Source: "files\FastHenry2\Utilities\ReadOutput.exe"; DestDir: "{app}\FastHenry2\Utilities"; Flags: ignoreversion; Components: utilities
 Source: "files\FastHenry2\Utilities\Zbuf.exe"; DestDir: "{app}\FastHenry2\Utilities"; Flags: ignoreversion; Components: utilities
+Source: "files\FastHenry2\Utilities\skin_depth_calculator.xlsx"; DestDir: "{app}\FastHenry2\Utilities"; Flags: ignoreversion; Components: utilities
 
 
 ; ****************************************
@@ -420,6 +425,9 @@ Source: "..\vcfiles\visual_studio_2013_community_vcredist_x86_redistributable.ex
 ; begin VC2013 redistributables
 Source: "..\vcfiles\visual_studio_2013_community_vcredist_x64_redistributable.exe"; DestDir: "{app}"; Flags: ignoreversion deleteafterinstall
 ; end VC2013 redistributables
+; begin VC2015 redistributables
+Source: "..\vcfiles\visual_studio_2015_community_vcredist_x64_redistributable.exe"; DestDir: "{app}"; Flags: ignoreversion deleteafterinstall
+; end VC2015 redistributables
 #endif
 
 ;
@@ -459,6 +467,7 @@ Filename: "{app}\visual_studio_2013_community_vcredist_x86_redistributable.exe";
 #else
 ;Filename: "{app}\vcredist_2008_x64.exe"; Parameters: "/q:a"
 Filename: "{app}\visual_studio_2013_community_vcredist_x64_redistributable.exe"; Parameters: "/quiet"
+Filename: "{app}\visual_studio_2015_community_vcredist_x64_redistributable.exe"; Parameters: "/quiet"
 #endif
 
 Filename: "{app}\FastModel\FastModel.exe"; Description: "Launch FastModel"; Flags: nowait postinstall skipifsilent

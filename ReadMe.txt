@@ -2,7 +2,7 @@
 
   FastFieldSolvers software bundle installer
 
-  Copyright (c) 2017  FastFieldSolvers S.R.L. -  http://www.fastfieldsolvers.com
+  Copyright (c) 2019  FastFieldSolvers S.R.L. -  http://www.fastfieldsolvers.com
 
 ==================================================================================
 
